@@ -1,375 +1,597 @@
-@charset "UTF-8";
-
-/*bass css*/
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    background: #fff;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 1.4rem;
-    font-family: 'Audiowide', cursive, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-a,
-a:hover a:focus {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-/*heading*/
-
-.heading {
-    position: relative;
-    font-size: 5rem;
-    padding-top: 100px;
-    padding-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-.heading::before,
-.heading::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid;
-}
-
-.heading::after {
-    bottom: 5px;
-}
-
-.wrapper {
-    max-width: 1170px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-
-/*header*/
-
-.header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 10;
-}
-
-.header-nav {
-    float: right;
-}
-
-.site-title a {
-    float: left;
-    font-size: 4rem;
-    letter-spacing: 1px;
-    top: 100%;
-    margin-top: 5px;
-    transition: all 0.3s;
-}
-
-.site-title a:hover {
-    transform: rotate(-1deg);
-    font-size: 4.1rem;
-}
-
-.header-nav li {
-    display: inline-block;
-    font-size: 2rem;
-    margin-right: 20px;
-    padding-top: 10px;
-    letter-spacing: 1px;
-    top: 100%;
-}
-
-.header-nav li::after {
-    content: '';
-    display: block;
-    border-bottom: 1px solid;
-    color: #fff;
-    width: 0px;
-    transition: all 0.3s;
-}
-
-.header-nav li:hover::after {
-    width: 100%;
-}
-
-
-/*main page*/
-
-.main {
-    height: 1010px
-}
-
-.main-title-sub {
-    font-size: 2rem;
-    padding-top: 200px;
-}
-
-.main-title-sub::after,
-.main-title-sub::before {
-    content: '';
-    display: inline-block;
-    border-bottom-style: double;
-    width: 0px;
-    vertical-align: baseline;
-    margin: 0 10px;
-    transition: all 2s ease-out;
-}
-
-.main-title-sub:hover::after,
-.main-title-sub:hover::before {
-    width: 220px;
-}
-
-.main-title {
-    font-size: 10rem;
-    padding: 10px 0;
-}
-
-.main-title::after {
-    display: block;
-    content: 'MY PROFILE SITE';
-    font-size: 10rem;
-    opacity: 0;
-    transition: all 8s;
-}
-
-.main-title:hover::after {
-    opacity: 1;
-}
-
-.click-button {
-    display: inline-block;
-    height: 40px;
-    width: 200px;
-    color: black;
-    font-size: 3rem;
-    margin-top: 100px;
-}
-
-.click-button:hover {
-    border-radius: 5px;
-    border: 0.5px solid rgba(0, 0, 0, 0.3);
-}
-
-
-/*about*/
-
-.about {
-    height: 1010px;
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-}
-
-.about-profile {
-    padding-top: 20px;
-    font-size: 3rem;
-    letter-spacing: 5px;
-}
-
-.about-text {
-    padding-top: 20px;
-    line-height: 2;
-    font-size: 3rem;
-    letter-spacing: 5px;
-}
-
-span {
-    display: block;
-    margin-top: 30px;
-    font-size: 4rem;
-}
-
-
-/*skill*/
-
-.skills {
-    height: 1010px;
-    letter-spacing: 2px;
-}
-
-.skill-sub-title {
-    padding-top: 20px;
-    line-height: 2;
-    font-size: 3rem;
-    letter-spacing: 5px;
-}
-
-.skill-wrapper {
-    width: 1050px;
-    height: 500px;
-    margin: 100px auto 0;
-    table-layout: fixed;
-    overflow-y: auto;
-    transition: all 1s;
-}
-
-.skill-wrapper:hover {
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    box-shadow: 0 0 50px rgb(0, 0, 0);
-}
-
-.skill-box-l {
-    display: block;
-    width: 1000px;
-    height: 500px;
-}
-
-.skill-box {
-    display: inline-block;
-    width: 40%;
-    padding-top: 50px;
-    margin-right: 50px;
-}
-
-.skill-box>img {
-    display: block;
-    width: 400px;
-    margin: 0 auto;
-}
-
-.skill-box img:hover {
-    width: 420px;
-}
-
-.skill-box h2 {
-    margin-top: 20px;
-}
-
-.skill-text {
-    display: block;
-    height: 100pxpx;
-    width: 240px;
-    word-break: break-all;
-    margin: 0 auto;
-}
-
-
-/*hobbies*/
-
-.hobbies {
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    height: 1200px;
-    letter-spacing: 2px;
-}
-
-.hobbies-wrapper {
-    display: table;
-    margin-top: 100px;
-}
-
-.hobbies-icon {
-    display: block;
-    font-size: 20rem;
-    margin: 0 auto;
-    -webkit-transform: all 2s;
-    transition: all 2s;
-}
-
-.hobbies-icon:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
-.hobbiy {
-    float: left;
-    height: 400px;
-    width: 50%;
-}
-
-.hobbies-title {
-    font-size: 3rem;
-    margin-top: 20px;
-}
-
-
-/*contact*/
-
-.contact {
-    height: 1010px;
-}
-
-.contact-form {
-    width: 50%;
-    margin: 100px auto;
-}
-
-.contact-name,
-.contact-email,
-.contact-message,
-.contact-button {
-    display: block;
-    width: 100%;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 3rem;
-    letter-spacing: 1px;
-    outline: none;
-}
-
-.contact-message {
-    height: 300px;
-}
-
-.contact-button {
-    display: block;
-    height: 100px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 1);
-}
-
-.contact-name:focus,
-.contact-email:focus,
-.contact-message:focus {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8)inset;
-}
-
-.contact-button:hover {
-    color: rgba(0, 0, 0, 1.0);
-    background-color: #fff;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-}
-
-.footer {
-    width: 100%;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    color: #fff;
-    padding: 15px;
-    font-size: 2rem;
-    letter-spacing: 2px;
-}
-
-
-/* --------------------------------
+    @charset "UTF-8";
+    /*bass css*/
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        background: #fff;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: 'Audiowide', cursive, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    a,
+    a:hover a:focus {
+        text-decoration: none;
+        color: #fff;
+    }
+    /*heading*/
+    
+    .heading {
+        position: relative;
+        font-size: 5rem;
+        padding-top: 100px;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    
+    .heading::before,
+    .heading::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid;
+    }
+    
+    .heading::after {
+        bottom: 5px;
+    }
+    
+    .wrapper {
+        max-width: 1170px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    /*header*/
+    
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 10;
+    }
+    
+    .header-nav {
+        float: right;
+    }
+    
+    .site-title a {
+        float: left;
+        font-size: 4rem;
+        letter-spacing: 1px;
+        top: 100%;
+        margin-top: 5px;
+        transition: all 0.3s;
+    }
+    
+    .site-title a:hover {
+        transform: rotate(-1deg);
+        font-size: 4.1rem;
+    }
+    
+    .header-nav .nav {
+        display: inline-block;
+        font-size: 2rem;
+        margin-right: 20px;
+        padding-top: 10px;
+        letter-spacing: 1px;
+        top: 100%;
+    }
+    
+    .header-nav .nav::after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid;
+        color: #fff;
+        width: 0px;
+        transition: all 0.3s;
+    }
+    
+    .header-nav .nav:hover::after {
+        width: 100%;
+    }
+    /*main page*/
+    
+    .main {
+        height: 1010px
+    }
+    
+    .main-title-sub {
+        font-size: 2rem;
+        padding-top: 200px;
+    }
+    
+    .main-title-sub::after,
+    .main-title-sub::before {
+        content: '';
+        display: inline-block;
+        border-bottom-style: double;
+        width: 0px;
+        vertical-align: baseline;
+        margin: 0 10px;
+        transition: all 2s ease-out;
+    }
+    
+    .main-title-sub:hover::after,
+    .main-title-sub:hover::before {
+        width: 220px;
+    }
+    
+    .main-title {
+        font-size: 10rem;
+        padding: 10px 0;
+    }
+    
+    .main-title::after {
+        display: block;
+        content: 'MY PROFILE SITE';
+        font-size: 10rem;
+        opacity: 0;
+        transition: all 8s;
+    }
+    
+    .main-title:hover::after {
+        opacity: 1;
+    }
+    
+    .click-button {
+        display: inline-block;
+        height: 40px;
+        width: 200px;
+        color: black;
+        font-size: 3rem;
+        margin-top: 100px;
+    }
+    
+    .click-button:hover {
+        border-radius: 5px;
+        border: 0.5px solid rgba(0, 0, 0, 0.3);
+    }
+    
+    .smart-button {
+        display: none;
+    }
+    /*about*/
+    
+    .about {
+        height: 1010px;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+    }
+    
+    .about-profile {
+        padding-top: 20px;
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+    
+    .about-text {
+        padding-top: 20px;
+        line-height: 2;
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+    
+    .about-text span {
+        display: block;
+        margin-top: 30px;
+        font-size: 4rem;
+    }
+    /*skill*/
+    
+    .skills {
+        height: 1010px;
+        letter-spacing: 2px;
+    }
+    
+    .skill-sub-title {
+        padding-top: 20px;
+        line-height: 2;
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+    
+    .skill-wrapper {
+        width: 1050px;
+        height: 500px;
+        margin: 100px auto 0;
+        table-layout: fixed;
+        overflow-y: auto;
+        transition: all 1s;
+    }
+    
+    .skill-wrapper:hover {
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        box-shadow: 0 0 50px rgb(0, 0, 0);
+    }
+    
+    .skill-box-l {
+        display: block;
+        width: 1000px;
+        height: 500px;
+    }
+    
+    .skill-box {
+        display: inline-block;
+        width: 40%;
+        padding-top: 50px;
+        margin-right: 50px;
+    }
+    
+    .skill-box>img {
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    .skill-box img:hover {
+        width: 420px;
+    }
+    
+    .skill-box h2 {
+        margin-top: 20px;
+    }
+    
+    .skill-text {
+        display: block;
+        height: 100px;
+        width: 240px;
+        word-break: break-all;
+        margin: 0 auto;
+    }
+    /*hobbies*/
+    
+    .hobbies {
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        height: 1200px;
+        letter-spacing: 2px;
+    }
+    
+    .hobbies-wrapper {
+        display: table;
+        margin-top: 100px;
+    }
+    
+    .hobbies-icon {
+        display: block;
+        font-size: 20rem;
+        margin: 0 auto;
+        -webkit-transform: all 2s;
+        transition: all 2s;
+    }
+    
+    .hobbies-icon:hover {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    
+    .hobbiy {
+        float: left;
+        height: 400px;
+        width: 50%;
+    }
+    
+    .hobbies-title {
+        font-size: 3rem;
+        margin-top: 20px;
+    }
+    /*contact*/
+    
+    .contact {
+        height: 1010px;
+    }
+    
+    .contact-wrapper {
+        margin: 0 auto;
+    }
+    
+    .contact-form {
+        width: 50%;
+        margin: 100px auto;
+    }
+    
+    .contact-name,
+    .contact-email,
+    .contact-message,
+    .contact-button {
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        outline: none;
+    }
+    
+    .contact-message {
+        height: 300px;
+    }
+    
+    .contact-button {
+        display: block;
+        height: 100px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 1);
+    }
+    
+    .contact-name:focus,
+    .contact-email:focus,
+    .contact-message:focus {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8)inset;
+    }
+    
+    .contact-button:hover {
+        color: rgba(0, 0, 0, 1.0);
+        background-color: #fff;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+    
+    .footer {
+        width: 100%;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        color: #fff;
+        padding: 15px;
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    /*メディアクエリ*/
+    /*header nav iquery */
+    
+    #smart-nav-bar {
+        display: none;
+    }
+    
+    .smart-nav {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /*親要素関係なし100%*/
+        display: block;
+        background: rgba(0, 0, 0, 0.8);
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+        transform: translateY(-100%);
+        font-size: 2rem;
+    }
+    /*画面中央寄せ */
+    
+    .smart-nav .smart-list {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        /*わからん*/
+        justify-content: center;
+        /*わからん*/
+        align-items: center;
+        /*わからん*/
+        height: 100%;
+    }
+    
+    .smart-nav li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    .smart-nav li span {
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .smart-nav li a,
+    .smart-nav li span {
+        display: block;
+        padding: 20px 0;
+    }
+    
+    .smart-nav .close {
+        position: relative;
+        padding-left: 20px;
+    }
+    
+    .smart-nav i {
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: 38%;
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+    .toggle {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    /*メディアクエリ*/
+    
+    @media(max-width: 1000px) {}
+    
+    @media(max-width: 670px) {
+        /*スマートフォン向けナビメニュー*/
+        .header-nav {
+            display: none;
+        }
+        #smart-nav-bar {
+            display: block;
+        }
+        #smart-nav-bar {
+            float: right;
+            padding: 5px 10px;
+            font-size: 4rem;
+        }
+        .main {
+            height: 600px;
+        }
+        .main-title-sub {
+            padding-top: 100px;
+        }
+        .main-title-sub::after,
+        .main-title-sub::before {
+            width: 50px;
+        }
+        .main-title-sub:hover::after,
+        .main-title-sub:hover::before {
+            width: 50px;
+        }
+        .main-title {
+            padding-top: 70px;
+            font-size: 5rem;
+        }
+        .main-title::after {
+            display: block;
+            content: 'MY PROFILE SITE';
+            font-size: 3rem;
+            opacity: 1;
+        }
+        .click-button {
+            opacity: 0;
+        }
+        .smart-button {
+            display: block;
+            color: rgba(0, 0, 0, 1);
+            font-size: 2rem;
+        }
+        /*文字等調整*/
+        .heading {
+            font-size: 3rem;
+            display: inline-block;
+            padding-top: 40px;
+        }
+        /*about*/
+        .about-profile,
+        .about-text {
+            font-size: 1.5rem;
+        }
+        .about-text span {
+            font-size: 2rem;
+        }
+        .about {
+            height: 800px;
+        }
+        /*skill*/
+        .skill-sub-title {
+            font-size: 2rem;
+            padding: 0px;
+            margin: 0;
+        }
+        .skill-wrapper {
+            width: 300px;
+            height: 500px;
+            margin: 40px auto 0;
+            overflow-y: auto;
+            transition: all 1s;
+            word-break: break-all;
+            box-shadow: 0 0 50px rgb(0, 0, 0);
+        }
+        .skill-wrapper:hover {
+            box-shadow: 0 0 50px rgb(0, 0, 0);
+        }
+        .skill-box-l {
+            width: 300px;
+            margin-bottom: 400px;
+        }
+        .skill-box {
+            display: block;
+            width: 100%;
+            padding-top: 50px;
+            margin-right: 50px;
+        }
+        .skill-box>img {
+            display: block;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .skill-box img:hover {
+            width: 300px;
+        }
+        .skill-box h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin: 20 auto;
+        }
+        .skill-text {
+            display: block;
+            height: 100px;
+            width: 240px;
+            word-break: break-all;
+            margin: 0 auto;
+        }
+        /*hobbies*/
+        .hobbies {
+            height: 600px;
+        }
+        .hobbiy {
+            width: 100%;
+        }
+        .hobbies-wrapper {
+            display: block;
+            width: 300px;
+            height: 350px;
+            margin: 40px auto 0;
+            word-break: break-all;
+            box-shadow: 0 0 50px rgb(0, 0, 0);
+            background-color: #fff;
+            color: rgba(0, 0, 0, 1);
+            overflow-y: auto;
+        }
+        .hobbies-title {
+            font-size: 2rem;
+        }
+        .hobbies-text {
+            font-size: 1.2rem;
+        }
+        /*contact*/
+        .contact {
+            height: 500px;
+        }
+        .contact-form {
+            padding-top: 0;
+            margin: 0 auto;
+        }
+        .contact-name,
+        .contact-email,
+        .contact-message,
+        .contact-button {
+            width: 100%;
+            margin: 10px auto;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .contact-message {
+            height: 200px;
+        }
+        .contact-button {
+            height: 40px;
+        }
+    }
+    /* --------------------------------
  * challenge
  *
  * 31行目からの.heading::before, .heading::afterの
  * スタイルをコメントアウトしてから適用してください。
  * -------------------------------- */
-
-
-/*
+    /*
 .heading::before,
 .heading::after {
   content: '';
