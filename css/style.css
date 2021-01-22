@@ -353,7 +353,7 @@
         letter-spacing: 2px;
     }
     /*メディアクエリ*/
-    /*header nav iquery */
+    /*header nav iQuery */
     
     #smart-nav-bar {
         display: none;
@@ -371,6 +371,7 @@
         background: rgba(0, 0, 0, 0.8);
         transition: all 0.2s ease-in-out;
         opacity: 0;
+        -webkit-transform: translate(-100%);
         transform: translateY(-100%);
         font-size: 2rem;
     }
@@ -420,6 +421,7 @@
     }
     
     .toggle {
+        -webkit-transform: translateY(0);
         transform: translateY(0);
         opacity: 1;
     }
