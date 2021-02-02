@@ -9,20 +9,10 @@
     <script src="https://kit.fontawesome.com/c4eaa9415c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 
-    <!-- jQueryの読み込み -->
-    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-
-    <!-- スマホナビの表示・非表示 わからん -->
-    <script>
-        $(function() {
-            const hum = $('#smart-nav-bar, .close')
-            const nav = $('.smart-nav')
-            hum.on('click', function() {
-                nav.toggleClass('toggle');
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -54,7 +44,7 @@
     <section class="main" id="top">
         <div class="wrapper">
             <p class="main-title-sub">My portfolio</p>
-            <h1 class="main-title">WELCOME</h1>
+            <h1 class="main-title">WELCOME<br><span>MY PROFILE SITE</span></h1>
             <div class="click">
                 <a class="click-button" href="#about">click please</a>
                 <a class="smart-button">scroll please</a>
@@ -81,36 +71,36 @@
             <div class="skill-wrapper">
                 <div class="skill-box-l">
                     <div class="skill-box">
-                        <img src="images/HTMLCSS-cutout.png" alt="HTML&CSS">
+                        <img src="images/html_cutout.png" alt="HTML&CSS">
                         <h2 class="sukill-title">HTML5 & CSS3</h2>
                         <p class=skill-text>学習中。綺麗なデザインを</p>
                     </div>
                     <div class="skill-box">
-                        <img src="images/git.png" alt="Git">
+                        <img src="images/css_cutout.png" alt="Git">
                         <h2 class="sukill-title">Git</h2>
                         <p class=skill-text>学習中。バージョン管理を</p>
                     </div>
                 </div>
                 <div class="skill-box-l">
                     <div class="skill-box">
-                        <img src="images/jQuery.png" alt="jQuery">
+                        <img src="images/lquerycut.gif" alt="jQuery">
                         <h2 class="sukill-title">jQuery</h2>
                         <p class=skill-text>未習得。サイトに動的な動きを</p>
                     </div>
                     <div class="skill-box">
-                        <img src="images/javascript.png" alt="JavaScript">
+                        <img src="images/javascript_cutout.png" alt="JavaScript">
                         <h2 class="sukill-title">JavaScript</h2>
                         <p class=skill-text>未習得。サイトに動的な動きを</p>
                     </div>
                 </div>
                 <div class="skill-box-l">
                     <div class="skill-box">
-                        <img src="images/ruby.png" alt="Ruby">
+                        <img src="images/ruby_cutout.png" alt="Ruby">
                         <h2 class="sukill-title">Ruby</h2>
                         <p class=skill-text>未習得。バックエンド。</p>
                     </div>
                     <div class="skill-box">
-                        <img src="images/ruby on .png" alt="Ruby on Rails">
+                        <img src="images/rails_cutout.png" alt="Ruby on Rails">
                         <h2 class="sukill-title">Ruby on Rails</h2>
                         <p class=skill-text>未習得。フレームワーク。</p>
                     </div>
@@ -150,9 +140,9 @@
             <h2 class="heading">CONTACT</h2>
             <form class="contact-form">
 
-                <input class="contact-name" type="text" name="name" placeholder="NAME">
-                <input class="contact-email" type="email" name="email" placeholder="EMAIL">
-                <textarea class="contact-message" placeholder="MESSAGE"></textarea>
+                <input class="contact-name" type="text" name="name" placeholder="NAME" value="">
+                <input class="contact-email" type="email" name="email" placeholder="E-MAIL">
+                <textarea class="contact-message" type="text" name="message" placeholder="MESSAGE"></textarea>
                 <input class="contact-button" type="submit" value="SEND">
             </form>
 
@@ -163,8 +153,10 @@
 
     </footer>
 
+    <!--placeholders-->
     <script src="lib/placeholders.min.js"></script>
-
+    <!--script.js-->
+    <script src="./script.js"></script>
 
 </body>
 
