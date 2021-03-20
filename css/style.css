@@ -245,18 +245,56 @@
         word-break: break-all;
         margin: 0 auto;
     }
+    /*works*/
+    
+    .works-sub-title {
+        margin: 0 auto;
+        font-size: 3rem;
+    }
+    
+    .works-title {
+        font-size: 8rem;
+        margin: 0 auto;
+    }
+    
+    .okusuris {
+        display: none;
+    }
+    
+    .okusuri>img {
+        display: block;
+        width: 700px;
+        margin: 0 auto;
+    }
+    
+    .okusuri2>img {
+        display: block;
+        width: 700px;
+        margin: 0 auto;
+    }
+    
+    .works-text {
+        font-size: 2rem;
+        margin: 50px 0;
+    }
+    
+    .okusurilogo>img {
+        border: solid #fff;
+        background-color: #fff;
+    }
     /*hobbies*/
     
     .hobbies {
         background-color: rgb(0, 0, 0);
         color: #fff;
-        height: 1200px;
+        height: 3200px;
         letter-spacing: 2px;
     }
     
     .hobbies-wrapper {
         display: table;
         margin-top: 100px;
+        margin: 0 auto;
     }
     
     .hobbies-icon {
@@ -537,9 +575,38 @@
             word-break: break-all;
             margin: 0 auto;
         }*/
+        /*works*/
+        .works-sub-title {
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+        .works-title {
+            font-size: 3rem;
+            margin: 0 auto;
+        }
+        .okusuris>img {
+            display: block;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .okusuri {
+            display: none;
+        }
+        .okusuris {
+            display: block;
+        }
+        .works-text {
+            font-size: 2rem;
+            margin: 50px 0;
+        }
+        .okusurilogo>img {
+            border: solid #fff;
+            background-color: #fff;
+            width: 200px;
+        }
         /*hobbies*/
         .hobbies {
-            height: 1250px;
+            height: 2000px;
         }
         .hobbiy {
             width: 100%;
@@ -552,8 +619,6 @@
             margin: 40px auto 0;
             word-break: break-all;
             box-shadow: 0 0 50px rgb(0, 0, 0);
-            background-color: #fff;
-            color: rgba(0, 0, 0, 1);
         }
         .hobbies-title {
             font-size: 2rem;
