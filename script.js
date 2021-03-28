@@ -69,51 +69,76 @@ $(function() {
     //$("section:nth-child(" + i + ")").offset().top　の　i が23456のみしかoffsetを拾わなかった
     //のでfor文はi=2 i<=6に設定　currentでハイライトを与える要素には i -2 をしてselectに代入調整
 */
+    /*
+        $("#contact-button").click(function() {
 
-    $(".contact-button").click(function() {
-
-        var classArray = [".contact-name", ".contact-email", ".contact-message"];
-        var nameArray = ["NAME", "E-MAIL", "MESSAGE"];
+            var classArray = [".contact-name", ".contact-email", ".contact-message"];
+            var nameArray = ["NAME", "E-MAIL", "MESSAGE"];
 
 
-        for (var i = 0; i <= classArray.length; i++) {
-            if (!$(classArray[i]).val()) {
-                $(classArray[i]).attr("placeholder", "alert:" + nameArray[i]);
-                $(classArray[i]).css("background-color", "#e66666");
-            } else {
-                $(classArray[i]).attr("placeholder", nameArray[i]);
-                $(classArray[i]).css("background-color", "#FFFF");
+            for (var i = 0; i <= classArray.length; i++) {
+                if (!$(classArray[i]).val()) {
+                    $(classArray[i]).attr("placeholder", "alert:" + nameArray[i]);
+                    $(classArray[i]).css("background-color", "#e66666");
+                } else {
+                    $(classArray[i]).attr("placeholder", nameArray[i]);
+                    $(classArray[i]).css("background-color", "#FFFF");
+                }
             }
-        }
 
-        return false;
+            return false;
 
+        });
+
+
+
+        /* 
+
+            if (!$(.contact-name).val()) {
+                $(.contact-name).attr("placeholder", "alert: NAME");
+                $(.contact-name).css("background-color", "#e66666");
+            } else {
+                $(.contact-name).attr("placeholder", "NAME");
+                $(.contact-name).css("background-color", "#FFFF");
+            }
+
+
+            return false;
+        });
+
+
+
+
+        console.log();
+
+
+    */
+
+
+
+
+});
+
+$(document).ready(function() {
+
+    $('#form').submit(function(event) {
+        var formData = $('#form').serialize();
+        $.ajax({
+            url: "https://docs.google.com/forms/u/3/d/e/1FAIpQLSfdzVV6WADDtq7VsoQqbWzjmsrah-oEl9ujHn8xYQfTmArlaw/formResponse",
+            data: formData,
+            type: "POST",
+            dataType: "xml",
+            statusCode: {
+                0: function() {
+                    $(".end-message").fadeIn();
+                    //window.location.href = "thanks.html";
+                },
+                200: function() {
+                    $(".false-message").fadeIn();
+                }
+            }
+        });
+        event.preventDefault();
     });
-
-
-
-    /* 
-
-        if (!$(.contact-name).val()) {
-            $(.contact-name).attr("placeholder", "alert: NAME");
-            $(.contact-name).css("background-color", "#e66666");
-        } else {
-            $(.contact-name).attr("placeholder", "NAME");
-            $(.contact-name).css("background-color", "#FFFF");
-        }
-
-
-        return false;
-    });
-
-
-
-
-    console.log();
-
-
-*/
-
-
 
 });
