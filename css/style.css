@@ -166,6 +166,11 @@
         padding-bottom: 100px;
     }
     
+    .about-name {
+        font-size: 4rem;
+        letter-spacing: 5px;
+    }
+    
     .about-profile {
         padding-top: 20px;
         font-size: 3rem;
