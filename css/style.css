@@ -356,6 +356,10 @@
         height: 300px;
     }
     
+    .contact-messages {
+        display: none;
+    }
+    
     .contact-button {
         display: block;
         height: 100px;
