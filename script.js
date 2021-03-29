@@ -28,7 +28,11 @@ $(function() {
     });
     $(window).scroll(function() {
         if ($(".skills").offset().top < $(window).scrollTop() + 200) {
-            $(".star").animate({ "opacity": 1 }, 10000);
+            $(".star1").animate({ "opacity": 1 }, 2000);
+            $(".star2").animate({ "opacity": 1 }, 3000);
+            $(".star3").animate({ "opacity": 1 }, 4000);
+            $(".star4").animate({ "opacity": 1 }, 5000);
+            $(".star5").animate({ "opacity": 1 }, 6000);
 
         }
     });

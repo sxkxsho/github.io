@@ -248,6 +248,25 @@
     
     .star {
         font-size: 2.3rem;
+    }
+    
+    .star1 {
+        opacity: 0;
+    }
+    
+    .star2 {
+        opacity: 0;
+    }
+    
+    .star3 {
+        opacity: 0;
+    }
+    
+    .star4 {
+        opacity: 0;
+    }
+    
+    .star5 {
         opacity: 0;
     }
     
