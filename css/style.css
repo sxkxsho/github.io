@@ -231,7 +231,8 @@
     
     .skill-box>img {
         display: block;
-        width: 180px;
+        max-width: 180px;
+        height: 180px;
         margin: 0 auto;
     }
     
@@ -244,6 +245,11 @@
         width: 310px;
     }
      */
+    
+    .star {
+        font-size: 2.3rem;
+        opacity: 0;
+    }
     
     .skill-box h2 {
         margin-top: 20px;
@@ -582,6 +588,7 @@
         .skill-box>img {
             display: block;
             width: 110px;
+            height: 110px;
         }
         .skill-box-2>img {
             display: block;
@@ -590,6 +597,9 @@
         }
         .skill-box img:hover {
             width: 110px;
+        }
+        .star {
+            font-size: 1.3rem;
         }
         /*
         .skill-box h2 {
