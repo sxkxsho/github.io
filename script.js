@@ -26,6 +26,7 @@ $(function() {
             }
         }
     });
+    //スキル星
     $(window).scroll(function() {
         if ($(".skills").offset().top < $(window).scrollTop() + 200) {
             $(".star1").animate({ "opacity": 1 }, 2000);
