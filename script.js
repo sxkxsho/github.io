@@ -60,8 +60,8 @@ $(function() {
     /*
     console.log($("section").eq("0").offset().top); //0,1,2,3,4
     console.log($("section:nth-child(2)").offset().top); //2,3,4,5,6
-    //$("section:nth-child(" + i + ")").offset().top　の　i が23456のみしかoffsetを拾わなかった
-    //のでfor文はi=2 i<=6に設定　currentでハイライトを与える要素には i -2 をしてselectに代入調整
+    //$("section:nth-child(" + i + ")").offset().top の i が23456のみしかoffsetを拾わなかった
+    //のでfor文はi=2 i<=6に設定 currentでハイライトを与える要素には i -2 をしてselectに代入調整
 */
     /*
         $("#contact-button").click(function() {

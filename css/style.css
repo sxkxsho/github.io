@@ -194,6 +194,7 @@
     .skills {
         height: 100%;
         letter-spacing: 2px;
+        padding-bottom: 100px;
     }
     
     .skill-sub-title {
@@ -211,11 +212,10 @@
         display: flex;
         flex-wrap: wrap;
     }
-    /* .skill-wrapper:hover {
-        background-color: rgb(0, 0, 0);
-        color: #fff;
-        box-shadow: 0 0 50px rgb(0, 0, 0);
-    } */
+    
+    .skill-text>a {
+        color: red;
+    }
     
     .skill-box {
         display: inline-block;
@@ -273,14 +273,6 @@
     .skill-box h2 {
         margin-top: 20px;
     }
-    
-    .skill-text {
-        display: block;
-        height: 100px;
-        width: 240px;
-        word-break: break-all;
-        margin: 0 auto;
-    }
     /*works*/
     
     .works-sub-title {
@@ -311,20 +303,18 @@
     
     .works-text {
         font-size: 2rem;
+        letter-spacing: 5px;
         margin: 50px 0;
-    }
-    
-    .okusurilogo>img {
-        border: solid #fff;
-        background-color: #fff;
+        line-height: 2;
     }
     /*works*/
     
     .works {
         background-color: rgb(0, 0, 0);
         color: #fff;
-        height: 3200px;
+        height: 100%;
         letter-spacing: 2px;
+        padding-bottom: 100px;
     }
     
     .works-wrapper {
@@ -340,14 +330,59 @@
         transition: all 2s;
     }
     
-    .works-icon:hover {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-    
     .works-title {
         font-size: 7rem;
         margin-top: 20px;
+    }
+    
+    .technology-title {
+        position: relative;
+        margin-top: 60px;
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+    
+    .technology-title::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid;
+    }
+    
+    table td {
+        padding: 20px;
+    }
+    
+    .technology-table {
+        font-size: 2rem;
+        letter-spacing: 5px;
+        margin: 50px auto;
+    }
+    
+    .technology-title-text {
+        font-size: 2.3rem;
+        letter-spacing: 5px;
+    }
+    
+    .technology-sub-title {
+        font-size: 2.3rem;
+        letter-spacing: 5px;
+        margin-top: 100px;
+    }
+    
+    .technology-text {
+        font-size: 2rem;
+        line-height: 2;
+        letter-spacing: 5px;
+    }
+    
+    .okusurilogo>img {
+        border: solid #fff;
+        background-color: #fff;
+        margin: 50px auto 50px;
     }
     /*contact*/
     
@@ -665,7 +700,7 @@
         /*works*/
         .works {
             height: 100%;
-            padding-bottom: 100px;
+            padding-bottom: 30px;
         }
         .works-wrapper {
             display: block;
@@ -677,12 +712,44 @@
         }
         .works-title {
             font-size: 2rem;
+            letter-spacing: 5px;
         }
         .works-text {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
         .works-icon {
             font-size: 10rem;
+        }
+        .technology-title {
+            margin-top: 60px;
+            font-size: 2rem;
+            letter-spacing: 5px;
+        }
+        .technology-title-text {
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+        }
+        .technology-table {
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            margin: 20px auto;
+        }
+        .technology-sub-title {
+            font-size: 1.7rem;
+            letter-spacing: 5px;
+            margin-top: 50px;
+        }
+        .technology-text {
+            font-size: 1.3rem;
+            line-height: 2;
+            letter-spacing: 5px;
+        }
+        table td {
+            padding: 0px;
+        }
+        .okusurilogo>img {
+            border: solid #fff;
+            background-color: #fff;
         }
         /*contact*/
         .contact {
