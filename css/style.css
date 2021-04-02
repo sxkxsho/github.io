@@ -239,6 +239,7 @@
     .skill-box-2>img {
         display: block;
         width: 500px;
+        height: 210px;
         margin: 0 auto;
     }
     /* .skill-box img:hover {
@@ -289,13 +290,7 @@
         display: none;
     }
     
-    .work>img {
-        display: block;
-        width: 700px;
-        margin: 0 auto;
-    }
-    
-    .work>img {
+    .work>a>img {
         display: block;
         width: 700px;
         margin: 0 auto;
@@ -647,6 +642,7 @@
         .skill-box-2>img {
             display: block;
             width: 200px;
+            height: 100px;
             margin: 0 auto;
         }
         .skill-box img:hover {
@@ -677,7 +673,7 @@
             font-size: 6rem;
             margin: 0 auto 10px;
         }
-        .work-s>img {
+        .work-s>a>img {
             display: block;
             width: 300px;
             margin: 0 auto;
