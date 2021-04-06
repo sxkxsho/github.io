@@ -37,33 +37,47 @@ $(function() {
 
         }
     });
+    //topボタン
+    let pageTop = $('#page-top');
+    pageTop.hide();
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            pageTop.fadeIn(300);
+        } else {
+            pageTop.fadeOut(300);
+        }
+    });
+    pageTop.click(function() {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+    })
 
     /*
-    //=======NG==========
-    $(window).scroll(function() {
-        for (var i = 1; i <= 5; i++) {
-            if ($("section:nth-child(" + i + ")").offset().top < $(window).scrollTop() + 200) {
-                $("nav li").removeClass("current");
-                $("nav li:nth-child(" + i + ")").addClass("current");
+        //=======NG==========
+        $(window).scroll(function() {
+            for (var i = 1; i <= 5; i++) {
+                if ($("section:nth-child(" + i + ")").offset().top < $(window).scrollTop() + 200) {
+                    $("nav li").removeClass("current");
+                    $("nav li:nth-child(" + i + ")").addClass("current");
+                }
             }
-        }
-    });
-    //=======ok===========変数の数調整にて    
-    $(window).scroll(function() {
-        for (var i = 2; i <= 6; i++) {
-            if ($("section:nth-child(" + i + ")").offset().top < $(window).scrollTop() + 200) {
-                $("nav li").removeClass("current");
-                var select = i - 2;
-                $("nav li:nth-child(" + select + ")").addClass("current");
+        });
+        //=======ok===========変数の数調整にて    
+        $(window).scroll(function() {
+            for (var i = 2; i <= 6; i++) {
+                if ($("section:nth-child(" + i + ")").offset().top < $(window).scrollTop() + 200) {
+                    $("nav li").removeClass("current");
+                    var select = i - 2;
+                    $("nav li:nth-child(" + select + ")").addClass("current");
+                }
             }
-        }
-    });
-    /*
-    console.log($("section").eq("0").offset().top); //0,1,2,3,4
-    console.log($("section:nth-child(2)").offset().top); //2,3,4,5,6
-    //$("section:nth-child(" + i + ")").offset().top の i が23456のみしかoffsetを拾わなかった
-    //のでfor文はi=2 i<=6に設定 currentでハイライトを与える要素には i -2 をしてselectに代入調整
-*/
+        });
+        /*
+        console.log($("section").eq("0").offset().top); //0,1,2,3,4
+        console.log($("section:nth-child(2)").offset().top); //2,3,4,5,6
+        //$("section:nth-child(" + i + ")").offset().top の i が23456のみしかoffsetを拾わなかった
+        //のでfor文はi=2 i<=6に設定 currentでハイライトを与える要素には i -2 をしてselectに代入調整
+    */
     /*
         $("#contact-button").click(function() {
             var classArray = [".contact-name", ".contact-email", ".contact-message"];
