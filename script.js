@@ -114,6 +114,7 @@ $(function() {
             dataType: "xml",
             statusCode: {
                 0: function() {
+                    $(".contact-button").fadeOut();
                     $(".end-message").fadeIn();
                     //window.location.href = "thanks.html";
                 },
