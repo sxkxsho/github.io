@@ -36,6 +36,25 @@ $(function() {
             $(".star5").animate({ "opacity": 1 }, 6000);
 
         }
+        if ($(".develop").offset().top < $(window).scrollTop() + 400) {
+            $(".under-1").animate({ "opacity": 1 }, 2000);
+        }
+        if ($(".under-2").offset().top < $(window).scrollTop() + 400) {
+            $(".under-2").animate({ "opacity": 1 }, 2000);
+            $(".text-opacity-2").animate({ "opacity": 1 }, 3000);
+        }
+        if ($(".under-3").offset().top < $(window).scrollTop() + 400) {
+            $(".under-3").animate({ "opacity": 1 }, 2000);
+            $(".text-opacity-3").animate({ "opacity": 1 }, 3000);
+        }
+        if ($(".under-4").offset().top < $(window).scrollTop() + 400) {
+            $(".under-4").animate({ "opacity": 1 }, 2000);
+            $(".text-opacity-4").animate({ "opacity": 1 }, 3000);
+        }
+        if ($(".under-5").offset().top < $(window).scrollTop() + 400) {
+            $(".under-5").animate({ "opacity": 1 }, 2000);
+            $(".text-opacity-5").animate({ "opacity": 1 }, 3000);
+        }
     });
     //topボタン
     let pageTop = $('#page-top');

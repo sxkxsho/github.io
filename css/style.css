@@ -360,6 +360,24 @@
     .technology-title-text {
         font-size: 2.3rem;
         letter-spacing: 5px;
+        margin: 10px;
+    }
+    
+    .under-1,
+    .under-2,
+    .under-3,
+    .under-4,
+    .under-5 {
+        display: inline-block;
+        border-bottom: solid 3px red;
+        opacity: 0.3;
+    }
+    
+    .text-opacity-2,
+    .text-opacity-3,
+    .text-opacity-4,
+    .text-opacity-5 {
+        opacity: 0.3;
     }
     
     .technology-sub-title {

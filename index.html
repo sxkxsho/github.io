@@ -268,35 +268,35 @@
                         <td>LINEログイン,MessagingAPI</td>
                     </tr>
                 </table>
-                <h1 class="technology-title">開発期間</h1>
+                <h1 class="technology-title develop">開発期間</h1>
                 <h4 class="technology-title-text">学習期間:約2ヶ月</h4>
                 <h4 class="technology-title-text">開発期間:約1ヶ月</h4>
                 <h1 class="technology-title">基本機能</h1>
-                <h4 class="technology-title-text">・ユーザー登録ログイン機能(ゲストログイン機能有)(devise)</h4>
-                <h4 class="technology-title-text">・LINEログイン(omniauth-line)</h4>
-                <h4 class="technology-title-text">・ユーザーごとの薬の作成(C)、閲覧(R)、編集(U)、削除(D)</h4>
-                <h4 class="technology-title-text">・作成登録した薬と時間の予定表示(ユーザーの服用実績ボタン:ajax)</h4>
-                <h4 class="technology-title-text">・時間通知 媒体:LINE連携,メール(Redis+sidekiq+line-bot-api or MAIL)</h4>
-                <h4 class="technology-title-text">・薬の残り日数と在庫管理(ユーザーの服用実績ボタン:ajax)</h4>
+                <h4 class="technology-title-text under-1">・ユーザー登録ログイン機能(ゲストログイン機能有)(devise)</h4>
+                <h4 class="technology-title-text under-1">・LINEログイン(omniauth-line)</h4>
+                <h4 class="technology-title-text under-1">・ユーザーごとの薬の作成(C)、閲覧(R)、編集(U)、削除(D)</h4>
+                <h4 class="technology-title-text under-1">・作成登録した薬と時間の予定表示(ユーザーの服用実績ボタン:ajax)</h4>
+                <h4 class="technology-title-text under-1">・時間通知 媒体:LINE連携,メール(Redis+sidekiq+line-bot-api or MAIL)</h4>
+                <h4 class="technology-title-text under-1">・薬の残り日数と在庫管理(ユーザーの服用実績ボタン:ajax)</h4>
                 <h1 class="technology-title">工夫点</h1>
-                <h4 class="technology-sub-title">・RailsでのLINE + メールを使った通知機能</h4>
-                <p class="technology-text">「時間になったら通知を行う」<br>という事例が少ないRailsで<br> 定時処理をバックグラウンドで行い<br>通知方法はLINE+メールを使用しました。<br> 定時処理には<br>Redisとsidekiq-schedulerを用いて<br>5分ごとにDB内を検索し
+                <h4 class="technology-sub-title under-2">・RailsでのLINE + メールを使った通知機能</h4>
+                <p class="technology-text text-opacity-2">「時間になったら通知を行う」<br>という事例が少ないRailsで<br> 定時処理をバックグラウンドで行い<br>通知方法はLINE+メールを使用しました。<br> 定時処理には<br>Redisとsidekiq-schedulerを用いて<br>5分ごとにDB内を検索し
                     <br> 通知すべき時間と薬、<br>ユーザーを判別し通知することに成功しました。
                     <br> ユーザー側からのアクションが<br>無い場合、<br>１時間は通知し続け飲み忘れを防ぎます。<br>
                 </p>
-                <h4 class="technology-sub-title">・通知すべき薬、時間の判定</h4>
-                <p class="technology-text">薬によって、<br>飲む日付け間隔、時間などが<br>変わってきます。<br> それらを判定する為のDBカラムを追加したり、
+                <h4 class="technology-sub-title under-3">・通知すべき薬、時間の判定</h4>
+                <p class="technology-text text-opacity-3">薬によって、<br>飲む日付け間隔、時間などが<br>変わってきます。<br> それらを判定する為のDBカラムを追加したり、
                     <br> 日つけ変更後に計算をしなおす<br>プログラムにしました。
                     <br> ユーザーによっては薬を<br>「やっぱり今日は飲まない…」
                     <br> となる時もくることを考えて<br>「のまない」選択を付与しました。
                 </p>
-                <h4 class="technology-sub-title">・薬の在庫管理</h4>
-                <p class="technology-text">ユーザーの服用に応じて、<br>薬の数を管理しています。<br> 服用したらその分減数、<br>まだ飲んでいなかったり<br>飲まない場合はそのまま、
+                <h4 class="technology-sub-title under-4">・薬の在庫管理</h4>
+                <p class="technology-text text-opacity-4">ユーザーの服用に応じて、<br>薬の数を管理しています。<br> 服用したらその分減数、<br>まだ飲んでいなかったり<br>飲まない場合はそのまま、
                     <br> 追加登録があったら増やすなど<br>柔軟に在庫管理をしました。
                 </p>
                 <h1 class="technology-title">反省点</h1>
-                <h4 class="technology-sub-title">・十分なテストができていない</h4>
-                <p class="technology-text">私自身Railsのテスト技術を<br>習得していないので、<br> コードによるテストができていない状態です。
+                <h4 class="technology-sub-title under-5">・十分なテストができていない</h4>
+                <p class="technology-text text-opacity-5">私自身Railsのテスト技術を<br>習得していないので、<br> コードによるテストができていない状態です。
                     <br> 今後は、テスト技術を身に付け<br>アプリケーションの完成度を
                     <br> 高めていきたいです。<br>テスト技術は学習中です。
                 </p>
